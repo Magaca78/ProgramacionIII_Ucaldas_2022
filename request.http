@@ -1,0 +1,73 @@
+###
+POST  http://localhost:3000/dashboard/product HTTP/1.1
+Content-Type: application/json
+
+{
+    "product":"Portatiles 4" ,
+    "img":"https://www.pexels.com/es-es/foto/agua-ordenador-portatil-beber-vaso-8473904/",
+    "price": 6000000,
+    "cant": 1,
+    "state": false
+}
+
+###
+GET http://localhost:3000/dashboard/products HTTP/1.1
+
+###
+GET http://localhost:3000/dashboard/products/6213c3e072cf744eaf024ade HTTP/1.1
+
+###
+DELETE  http://localhost:3000/dashboard/products/6213c3e072cf744eaf024ade HTTP/1.1
+
+###
+PUT http://localhost:3000/dashboard/products/6213ddfd8a07badf9c8ee4f7 HTTP/1.1
+Content-Type: application/json
+
+{
+    "product": "Portatiles 6",
+    "price": "4500000",
+    "cant": 2
+}
+
+
+
+
+###
+POST  http://localhost:3000/dashboard/client HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"Luis" ,
+    "lastname":"Paez",
+    "count_bank": "55879641",
+    "address": {
+        "city": "Armenia",
+        "code_zip": 89665,
+        "lat": -45,
+        "length": 99
+    }
+   
+}
+
+###
+GET http://localhost:3000/dashboard/clients HTTP/1.1
+
+###
+GET http://localhost:3000/dashboard/clients/62143dcb9c6f1aab8d8855cb HTTP/1.1
+
+###
+DELETE  http://localhost:3000/dashboard/clients/62143dcb9c6f1aab8d8855cb HTTP/1.1
+
+###
+PUT http://localhost:3000/dashboard/clients/62143e3f9c6f1aab8d8855d7 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Juan",
+    "lastname": "Lopez",
+
+    "address":{
+        "city":
+    }
+    
+}
